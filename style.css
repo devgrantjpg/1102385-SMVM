@@ -1,6 +1,12 @@
 * {
     margin: 0;
   }
+
+  h2 {
+   font-size: 18px;
+   color:#f7f7f7;
+   font-weight: lighter;
+  }
   
   body {
     font-family: "Roboto", sans-serif;
@@ -34,13 +40,24 @@
   }
   
   .menu-list {
-    display: flex;
-    list-style: none;
-  }
-  
-  .menu-list-item {
-    margin-right: 30px;
-  }
+    display: flex; /* Lay out menu items horizontally */
+    justify-content: flex-end /* Align items to the left and reduce space between them */
+}
+
+.menu-list-item {
+    list-style-type: none; /* Removes bullet points */
+    margin-right: 10px; /* Adjust this value to control the space between menu items */
+}
+
+.menu-list a {
+    color: white; /* Change the text color to white */
+    text-decoration: none; /* Removes underline */
+    padding: 5px 10px; /* Reduce padding to bring texts closer */
+}
+
+.menu-list a:hover {
+    color: #ddd; /* Optional: changes color when hovered */
+}
   
   .menu-list-item.active {
     font-weight: bold;
@@ -138,26 +155,30 @@
     transform: translate(-50%, -50%);
   }
   
-  
-    .featured-desc {
+  .featured-desc {
     width: 400px;
     color: lightgray;
-    margin: 20px auto; /* Centers horizontally */
+    margin-left: 40px; /* Left margin */
+    margin-bottom: 20px; /* Bottom margin */
     display: flex;
-    padding-top: 20px;
-    justify-content: center; /* Centers content horizontally inside the div */
-    align-items: center; /* Centers content vertically inside the div */
+    flex-direction: column; /* Aligns items vertically */
+    justify-content: flex-end; /* Aligns content to the bottom */
+    align-items: flex-start; /* Aligns content to the left */
+
     height: 50vh; /* Ensure it takes up the full height of the viewport */
-    text-align: center; /* Center the text inside the div */
-   
+    text-align: left; /* Align the text to the left */
+    font-family: 'Cinzel', serif; /* Apply the Cinzel font */
+    font-size: 50px; /* Adjust the font size as needed */
+    font-weight: 700; /* Use bold weight for emphasis */
+    color: #cdc4c4; /* Set the font color to white */
     border-radius: 20px; /* Rounds the corners */
-  }
-  
-  
+    padding: 10px; /* Add padding for spacing */
+}
+
   
   
   .featured-button {
-    background-color: #4dbf00;
+    background-color: #9ca400;
     color: white;
     padding: 10px 20px;
     margin-bottom: 10px;
