@@ -1,0 +1,466 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="app.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&family=Cinzel:wght@400;700&display=swap"
+        rel="stylesheet"> <!-- Add Cinzel font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>movies</title>
+</head>
+
+<body>
+    <audio id="background-music" autoplay loop>
+        <source src="path/file/mizt.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">TMC TV</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item"><a href="signIn09273182-9848208.html">Sign In</a></li>
+                    <li class="menu-list-item"><a href="j1s302_2138-319_913931c330e49r076xj202138-319.html">Cartoons</a></li>
+                    <!-- <li class="menu-list-item">Action</li>
+                    <li class="menu-list-item">Trending</a></li> -->
+                    <li class="menu-list-item">Kids TV</a></li>
+                    <!-- <li class="menu-list-item">Series</a></li> -->
+                    <!-- <li class="menu-list-item"><a href="genres/movies.html/">Series</a></li> -->
+
+                </ul>
+            </div>
+               <div class="profile-container">
+                <!-- <img class="profile-picture" src="img/filelatest/grants.jpg" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fas fa-caret-down"></i>
+                </div> -->
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+                
+            </div>
+            <div class="music-control">
+                <button id="music-toggle" onclick="toggleMusic()">
+                    <i class="fas fa-play" id="play-icon"></i>
+                    <i class="fas fa-pause" id="pause-icon" style="display: none;"></i> 
+                    <span id="music-status">Pause Music</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="sidebar">
+        <i class="left-menu-icon fas fa-search"></i>
+        <i class="left-menu-icon fas fa-home"></i>
+        <i class="left-menu-icon fas fa-users"></i>
+        <i class="left-menu-icon fas fa-bookmark"></i>
+        <i class="left-menu-icon fas fa-tv"></i>
+        <i class="left-menu-icon fas fa-hourglass-start"></i>
+        <i class="left-menu-icon fas fa-shopping-cart"></i>
+    </div> -->
+    
+    <div class="container">
+         <div class="content-container">
+            <div class="featured-content3"
+            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/filelatest/mscndct.jpg');">
+             <!-- <img class="featured-title" src="img/3208d923t.jpg" alt="">  -->
+             <p class="featured-desc">Misconduct</p> 
+             <h2>An ambitious Lawyer takes a case against an Executive of a pharmaceutical company</h2>
+             <button class="featured-buttonx"><a href="0098786685423454/1121599873738309309a8d9ad9f9w.html">Watch</a></button> 
+        </div> 
+        <div class="movie-list-container">
+            <h1 class="movie-list-title">TRENDING</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/filelatest/5FrUP4wnFWdlA2huAeJxn1WIR0O.jpg">
+                        <span class="movie-list-item-title">4 Assasins</span>
+                        <p class="movie-list-item-desc">In the cosmopolitan city of Hong Kong, Assasin Marcus Nang was summoned to meet with three professional colleagues to resolve unfinished business.</p>
+                            <button class="movie-list-item-button"><a href="098786685423454/8499r9gjfgu7yenem_4240it.html">
+                                Watch
+                            </a>
+                            </button>
+                    </div>
+
+                    
+                    <!-- <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/filelatest/thepoisonrose.jpg" alt="">
+                        <span class="movie-list-item-title">Poison Rose</span>
+                        <p class="movie-list-item-desc">investigator Carson Phillips is hired to conduct an investigation in his Texas hometown</p>
+                            <button class="movie-list-item-button"><a href="file1/9s00404ll5l9r8fdes_d923i3k4keee.html">
+                                Watch
+                            </a>
+                            </button>
+                    </div> -->
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/filelatest/6guf9hmdpuq11.jpg" alt="">
+                        <span class="movie-list-item-title">Leprechaun</span>
+                        <p class="movie-list-item-desc">A leprechaun gets all his gold stolen by a tourist. When he gets the opportunity to follow the thief, he decides to go for vengeance. </p>
+                            <button class="movie-list-item-button"><a href="098786685423454/1002j3iow2424204024221.html">
+                                Watch
+                            </a>
+                            </button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/filelatest/jeeperscreepers2.jpg" alt="">
+                        <span class="movie-list-item-title">Jeepers Creeper 2</span>
+                        <p class="movie-list-item-desc">the creeper, a killer who targets bus full of highschool students.</p>
+                            <button class="movie-list-item-button"><a href="098786685423454/11uwmee88473625294llhy.html">
+                                Watch
+                            </a>
+                            </button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/filelatest/terrifier.jpg" alt="">
+                        <span class="movie-list-item-title">Terrifier</span>
+                        <p class="movie-list-item-desc">A maniac clown goes after two friends and who ever gets in his way, in this slasher film.</p>
+                            <button class="movie-list-item-button"><a href="098786685423454/324ko2khh2_53523.html">
+                                Watch
+                            </a>
+                            </button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/filelatest/andromeda.jpeg" alt="">
+                        <span class="movie-list-item-title">Andromeda</span>
+                        <p class="movie-list-item-desc">A man embarks on a space journey to find his long-lost father, a researcher who went on an expedition to the farthest reaches of the universe and mysteriously disappeared.</p>
+                            <button class="movie-list-item-button"><a href="098786685423454/13ddi329fj3933k08c32f.html">
+                                Watch
+                            </a>
+                            </button>
+                    </div>
+                    <!-- <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/filelatest/robots.jpg" alt="">
+                        <span class="movie-list-item-title">Monsters Of Man</span>
+                        <p class="movie-list-item-desc">A robotics company teams up with a corruption and unsanctioned military operation.</p>
+                            <button class="movie-list-item-button"><a href="file1/140394829ffm4oe_d92393ko.html">
+                                Watch
+                            </a>
+                            </button>
+                    </div> -->
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="featured-content3"
+            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/filelatest/hqdefault.jpg');">
+            <!-- <img class="featured-title" src="img/3208d923t.jpg" alt=""> -->
+             <p class="featured-desc"></p> 
+             <h2>A family finds themself in the middle of a political uprising after moving to Asia.</h2>
+            <button class="featured-buttonx"><a href="0098786685423454/921599873738309309a8d9ad9f9w.html">Watch</a></button> 
+        </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">TRENDING</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <!-- <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/filelatest" alt="">
+                            <span class="movie-list-item-title"></span>
+                            <p class="movie-list-item-desc"></p>
+                            <button class="movie-list-item-button"><a href="098786685423454/1002j3iow2424204024221.html">watch</a>
+                               
+                            </button>
+                        </div> -->
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/filelatest/lostcolony.jpg" alt="">
+                            <span class="movie-list-item-title">Lost Colony</span>
+                            <p class="movie-list-item-desc">English colonists, Native Islanders and Supernatural Ghosts encounter one another in what is now known as North Carolina. </p>
+                            <button class="movie-list-item-button"><a href="0098786685423454/21599873738309309a8d9ad9f9w.html">
+                                Watch
+                            </a>
+                            </button>
+                        </div>
+                        <!-- <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/filelatest/terrifier.jpg" alt="">
+                            <span class="movie-list-item-title">Terrifier</span>
+                            <p class="movie-list-item-desc">A maniac clown goes after two friends and who ever gets in his way, in this slasher film.</p>
+                                <button class="movie-list-item-button"><a href="098786685423454/324ko2khh2_53523.html">
+                                    Watch
+                                </a>
+                                </button>
+                        </div> -->
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/filelatest/hmask.jpg" alt="">
+                            <span class="movie-list-item-title">Holloween</span>
+                            <p class="movie-list-item-desc">Holloween 1978. Standard Definition.</p>
+                                <button class="movie-list-item-button"><a href="0098786685423454/1021599873738309309a8d9ad9f9w.html">
+                                    Watch
+                                </a>
+                                </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/filelatest/solar impact.jpg" alt="">
+                            <span class="movie-list-item-title">Solar Debris</span>
+                            <p class="movie-list-item-desc">When solar debris rains down upon Earth, it sparks catastrophic destruction across the planet.</p>
+                                <button class="movie-list-item-button"><a href="098786685423454/5328787318791830_3215fsdgg_df2334.html">
+                                    Watch
+                                </a>
+                                </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/filelatest/mscndct.jpg" alt="">
+                            <span class="movie-list-item-title">Misconduct</span>
+                            <p class="movie-list-item-desc">An ambitious lawyer takes on a case against an Executive of a pharmaceutical company </p>
+                                <button class="movie-list-item-button"><a href="098786685423454/63523059igwdwe33j4523_3362.html">
+                                    Watch
+                                </a>
+                                </button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/filelatest/ootf.jpg" alt="">
+                            <span class="movie-list-item-title">Out of furnace</span>
+                            <p class="movie-list-item-desc">When Rodney disapears after associating with a crime ring. Russel (Christian Bale), Rodney's brother takes matters into his own hands to find the truth behind his brother's disappearance.</p>
+                                <button class="movie-list-item-button"><a href="0098786685423454/821599873738309309a8d9ad9f9w.html">
+                                    Watch
+                                </a>
+                                </button>
+                        </div>
+                        <!-- <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/filelatest/fistoflegend.jpg" alt="">
+                            <span class="movie-list-item-title">Fist Of Legend</span>
+                            <p class="movie-list-item-desc">Prepare for an epic clash between Chinese Kung Fu and Japanese Samurai as Chen Zhen takes up arms to safeguard China's honor.</p>
+                                <button class="movie-list-item-button"><a href="098786685423454/753220m4ms8s8swk4.html">
+                                    Watch
+                                </a>
+                                </button>
+                        </div> -->
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            
+            <div class="featured-content3xx"
+            style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), #151515), url('img/filelatest/gladiator.jpeg'); background-size: 100%;">
+             <!-- <img class="featured-title" src="img/3208d923t.jpg" alt=""> -->
+             <p class="featured-desc">Subscribe</p> 
+             <h2>Subscribe today to join the list for free promotional new releases like this one in HD, and purchasable upcoming video on demand options</h2>
+             <h2>Sign up then Sign in!</h2>
+            <button class="featured-button"><a href="signIn09273182-9848208.html">Sign Up</a></button> 
+        </div>
+        </div>
+    </div>
+    <!-- <div class="content-container">
+        <div class="featured-content2"
+        style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/filelatest/251920-576965.jpg');">
+        <!-- <img class="featured-title" src="img/3208d923t.jpg" alt=""> -->
+         <!-- <p class="featured-desc"></p> 
+         <h2> </h2> -->
+        <!-- <button class="featured-button"><a href="file2/1098004c9c8c7me9ec99e99e000e739387.html">Watch Preview</a></button>  
+    </div> -->
+             <!-- <div class="movie-list-container">
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/filelatest/1733986.jpg" alt="">
+                            <span class="movie-list-item-title">Lost Colony 1500s</span>
+                            <p class="movie-list-item-desc">English colonists, Native Islanders and Supernatural Ghosts encounter one another in what is now known as North Carolina.</p>
+                            <button class="movie-list-item-button"><a href="file2/21599873738309309a8d9ad9f9w.html">Watch</a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/filelatest/haywire.jpg" alt="">
+                            <span class="movie-list-item-title">Haywire</span>
+                            <p class="movie-list-item-desc"> In WW2 An American tank crew is given a risky mission to infiltrate Nazi treasures that is hidden in an abandoned castle.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/filelatest/eyytWOyGCMeDdEus7yJMqaa4i98.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/3.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/4.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/5.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div> -->
+            <!-- <div class="movie-list-container">
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/17.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/18.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/19.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/7.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>  -->
+
+    <!-- <div class="container">
+        <div class="content-container">
+
+            <div class="featured-content3"
+            style="background: linear-gradient(to right, rgba(0,0,0,0.2), #151515), url('img/filelatest/3208d923tr.jpg');">           
+            <div class="movie-list-item-C">
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/filelatest/ootf.jpg" alt="">
+                <span class="movie-list-item-title">Out of the furnace</span>
+                <p class="movie-list-item-desc">When Rodney disapears after associating with a crime ring. Russel (Christian Bale), Rodney's brother takes matters into his own hands to find the truth behind his brother's disappearance. </p>
+                    <button class="movie-list-item-button"><a href="0098786685423454/821599873738309309a8d9ad9f9w.html">
+                        Watch
+                    </a>
+                    </button>
+            </div>
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/filelatest/noescape.jpg" alt="">
+                <span class="movie-list-item-title">No Escape</span>
+                <p class="movie-list-item-desc">A family finds themself in the middle of a political uprising after moving to Asia.</p>
+                    <button class="movie-list-item-button"><a href="0098786685423454/921599873738309309a8d9ad9f9w.html">
+                        Watch
+                    </a>
+                    </button>
+            </div>
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/filelatest/hmask.jpg" alt="">
+                <span class="movie-list-item-title">Holloween</span>
+                <p class="movie-list-item-desc">Holloween 1978. Standard Definition.</p>
+                    <button class="movie-list-item-button"><a href="0098786685423454/1021599873738309309a8d9ad9f9w.html">
+                        Watch
+                    </a>
+                    </button>
+            </div> -->
+            <!-- <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/filelatest/mscndct.jpg" alt="">
+                <span class="movie-list-item-title">Misconduct</span>
+                <p class="movie-list-item-desc">An ambitious Lawyer takes a case against an Executive of a pharmaceutical company</p>
+                    <button class="movie-list-item-button"><a href="0098786685423454/1121599873738309309a8d9ad9f9w.html">
+                        Watch
+                    </a>
+                    </button>
+            </div>
+        </div>  -->
+    </div>
+    
+    <div class="featured-content3x"
+    style="background: linear-gradient(to bottom, rgba(0,0,0,0.6), #151515), url('img/filelatest/3208d923tr.jpg');">
+    <!-- <img class="featured-title" src="img/3208d923t.jpg" alt=""> -->
+     <p class="featured-descx">TMCTV.org</p> 
+     <!-- <h2>English colonists, Native Islanders and Supernatural Ghosts encounter one another in what is now known as North Carolina.</h2>
+    <button class="featured-button"><a href="file2/21599873738309309a8d9ad9f9w.html">Watch</a></button>  -->
+</div> 
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61571283972676" target="_blank">Follow us on Facebook</a>
+            <!-- <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a> -->
+        </div>
+        <p>&copy; 2025 TMCTV.org. All rights reserved.</p>
+        <li class="menu-list-item"><a href="pages/privacy_23989aca0dg9028lal9vauc903094dsiea012_1391n43654n2m319210.html">Privacy Policy & Terms of Service</a></li>
+        <!-- <p>Contact us: <a href="mailto:contact@yourcompany.com">contact@yourcompany.com</a></p> -->
+    </footer>
+
+
+    <script src="app.js"></script>
+
+    <script>
+        function toggleMusic() {
+            var music = document.getElementById('background-music');
+            var playIcon = document.getElementById('play-icon');
+            var pauseIcon = document.getElementById('pause-icon');
+            var statusText = document.getElementById('music-status');
+
+            if (music.paused) {
+                music.play();
+                playIcon.style.display = 'none';
+                pauseIcon.style.display = 'inline-block';
+                statusText.textContent = 'Pause Music';
+            } else {
+                music.pause();
+                playIcon.style.display = 'inline-block';
+                pauseIcon.style.display = 'none';
+                statusText.textContent = 'Play Music';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

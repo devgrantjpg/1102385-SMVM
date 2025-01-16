@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King of the hill</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;  /* Make sure the body and HTML take up the full height */
+            width: 100%;   /* Make sure the body and HTML take up the full width */
+            background-color: #f0f0f0;
+        }
+
+        header {
+            position: fixed;  /* Fix the header at the top of the screen */
+            top: 0;
+            left: 0;
+            width: 100%;  /* Make the header span the entire width */
+            background-color: #000;  /* Set header to black */
+            color: white;            /* Set text color to white */
+            text-align: center;
+            padding: 50px 20px;      /* Increased padding to make header taller */
+            z-index: 100;            /* Ensure the header stays on top */
+            box-sizing: border-box;  /* Ensure padding is included in height calculation */
+        }
+
+        .video-container {
+            position: absolute;
+            top: 80px;  /* Offset the video below the fixed header */
+            left: 50%;
+            transform: translateX(-50%); /* Center the video container horizontally */
+            width: 80%;  /* Set the video container to 80% of the screen width */
+            max-width: 800px; /* Max width to prevent it from getting too large */
+            height: 450px;  /* Fixed height for the video container */
+        }
+
+        iframe {
+            width: 100%;  /* Ensure the iframe fills the full width of the container */
+            height: 100%; /* Ensure the iframe fills the container's height */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>King of the hill</h1>
+    </header>
+
+    <div class="video-container">
+        <iframe src="https://drive.google.com/file/d/1_zD1_dKG9aIPwPw-EmoMrtSFgow3f2rm/preview" title="King of the hill" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+
+</body>
+</html>
