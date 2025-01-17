@@ -150,7 +150,7 @@
   .featured-content3x {
     height: 65vh;
     width: 100vw;
-    margin-left: -17px; /* Add this to push the image to the left */
+    margin-left: 0px; /* Add this to push the image to the left */
     margin-right: 0;  /* Remove or reduce margin on the right */
   }
   
@@ -171,7 +171,7 @@
   
   
   .featured-content3xx {
-    height: 90vh;
+    height: 50vh;
     width: 100vw;
     margin-left: -17px; /* Add this to push the image to the left */
     margin-right: 0;  /* Remove or reduce margin on the right */
