@@ -149,7 +149,7 @@
   
   .featured-content3x {
     height: 75vh;
-    width: 90vw;
+    width: 100vw;
     margin-left: 50px; /* Add this to push the image to the left */
     margin-right: 0;  /* Remove or reduce margin on the right */
   }
