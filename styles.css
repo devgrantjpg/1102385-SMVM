@@ -142,15 +142,15 @@
   
   .featured-content3 {
     height: 50h;
-    width: 95vw;
+    width: 90vw;
     margin-left: 32px; /* Add this to push the image to the left */
     margin-right: 0;  /* Remove or reduce margin on the right */
   }
   
   .featured-content3x {
     height: 75vh;
-    width: 100vw;
-    margin-left: 50px; /* Add this to push the image to the left */
+    width: 95vw;
+    margin-left: 49px; /* Add this to push the image to the left */
     margin-right: 0;  /* Remove or reduce margin on the right */
   }
   
