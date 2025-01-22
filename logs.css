@@ -1,0 +1,21 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* Space between icons */
+.sidebar a {
+    margin-bottom: 15px; /* Adds space between icons */
+    display: inline-block; /* Ensures the icons are displayed properly */
+}
+
+.sidebar i {
+    font-size: 24px; /* Adjust icon size */
+    color: #000; /* Icon color, you can change this */
+    transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.sidebar a:hover i {
+    color: #007bff; /* Color change on hover */
+}
