@@ -4,13 +4,14 @@
     font-family: 'Poppins',sans-serif;
 }
 
-.h1 {
+.h2 {
     color: yellow;
+    font-size: 22px;
 }
 .navbar{
     background-color: #171d21;
     display: flex;
-    align-items: center;
+    align-items:flex-start;
     justify-content: space-between;
     padding: 20px 30px;
 }
@@ -657,6 +658,77 @@ footer .footer-top{
     opacity: 1;  
     transition: opacity 1s, transform 1s;     
 }
+
+/* Container for the entire list */
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Individual card styling */
+  .card {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #000; /* Background set to black */
+    color: #fff; /* Text color set to white for contrast */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    transform: translateX(50px); /* Move the entire card container (image + title + footer) to the right */
+  }
+  
+  /* Image container styling */
+  .img-container {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Image styling */
+  .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Title section styling */
+  .title {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .title h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .title a {
+    text-decoration: none;
+    color: #fff; /* White title text */
+  }
+  
+  /* Hover effect for the card */
+  .card:hover {
+    transform: translateY(-5px) translateX(50px); /* Slight lift effect + keep moving to the right */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+  }
+  
+  /* Hover effect for title */
+  .card:hover .title h4 {
+    color: #ff9900; /* Title color change on hover */
+  }
+  
+  /* Hover effect for image */
+  .card:hover .img-container img {
+    opacity: 0.8; /* Slight opacity change to image on hover */
+  }
+  
 
 @media only screen and (max-width: 909px){
     .hamburger{
