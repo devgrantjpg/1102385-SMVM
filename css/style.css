@@ -74,17 +74,20 @@
     border-radius: 5px;
     background-color: #fff;
 }
-.hero{
-    background: url(/imgs/brucelee.jpg) no-repeat;
+.hero {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), 
+        url(/img2/8160014.jpg) no-repeat;
     background-size: cover;
     background-position: right;
-    height: 90vh;   
+    height: 90vh;
     max-height: 1000px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 0px 30px;
 }
+
 .hero .main .content{
     max-width: 60%;
 }
