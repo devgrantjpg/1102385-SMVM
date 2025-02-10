@@ -76,10 +76,10 @@
 }
 .hero {
     background: 
-        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), 
-        url(/img2/8160014.jpg) no-repeat;
+        linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), 
+        url(/img2/twittermidnight-crowd4567_559157.jpg) no-repeat;
     background-size: cover;
-    background-position: right;
+    background-position: center;
     height: 90vh;
     max-height: 1000px;
     display: flex;
@@ -87,6 +87,7 @@
     align-items: center;
     padding: 0px 30px;
 }
+
 
 .hero .main .content{
     max-width: 60%;
