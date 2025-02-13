@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie</title>
+    <title>movies</title>
     <style>
         /* Reset default margin and padding */
         * {
@@ -13,10 +13,9 @@
         }
 
         body, html {
-            height: 100%;  /* Ensure the body and HTML take up the full height */
-            width: 100%;   /* Ensure the body and HTML take up the full width */
+            height: 100%;  /* Make sure the body and HTML take up the full height */
+            width: 100%;   /* Make sure the body and HTML take up the full width */
             background-color: #f0f0f0;
-            overflow: hidden;  /* Hide scrollbars */
         }
 
         header {
@@ -27,17 +26,17 @@
             background-color: #000;  /* Set header to black */
             color: white;            /* Set text color to white */
             text-align: center;
-            padding: 66px 20px;      /* Increased padding to make header taller */
+            padding: 40px 20px;      /* Increased padding to make header taller */
             z-index: 100;            /* Ensure the header stays on top */
             box-sizing: border-box;  /* Ensure padding is included in height calculation */
         }
 
         .video-container {
-            position: relative;
-            top: 80px;  /* Offset the video below the fixed header */
+            position: absolute;
+            top: 2px;  /* Offset the video below the fixed header (height increased) */
             left: 0;
             width: 100%;  /* Make the video container span the entire width */
-            height: calc(100vh - 80px);  /* Adjusted height based on new header size */
+            height: calc(100vh - 5px);  /* Adjusted height based on new header size */
         }
 
         iframe {
@@ -47,40 +46,7 @@
             width: 100%;  /* Ensure the iframe fills the full width */
             height: 100%; /* Ensure the iframe fills the remaining height */
             border: none;
-            pointer-events: auto; /* Allow interaction with the video itself */
         }
-
-        /* Overlay that will be placed on top of the video for protection */
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0); /* Semi-transparent black overlay */
-            pointer-events: none;  /* Allow interaction with the iframe behind */
-        }
-
-        /* Disable right-click on the page */
-        html, body {
-            -webkit-user-select: none;  /* Disable user selection */
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-        /* Preventing right-click menu in modern browsers */
-        body {
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-        }
-
-        /* Disable context menu */
-        document.addEventListener('contextmenu', function (e) {
-            e.preventDefault();
-        });
     </style>
 </head>
 <body>
@@ -89,25 +55,8 @@
         <h1></h1>
     </header>
 
-    <div class="video-container">
-        <!-- Embed the Google Drive video link -->
-        <iframe src="https://drive.google.com/file/d/1IntfNshdM3Dcbl3a0oFjVFUAsQu6a44V/preview" 
-                title="" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
-        </iframe>
-
-        <!-- Overlay element that will cover the video but remain non-interactive -->
-        <div class="overlay">Movie</div>
-    </div>
-
-    <script>
-        // Disable right-click on the page (preventing video download attempts through right-click)
-        document.addEventListener('contextmenu', function (e) {
-            e.preventDefault();  // Block the context menu from appearing
-        });
-    </script>
+    <iframe width="1257" height="480" src="https://drive.google.com/file/d/1IntfNshdM3Dcbl3a0oFjVFUAsQu6a44V/preview" title="Hellnight" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
 
 </body>
 </html>
